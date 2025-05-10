@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomButtonsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="15dp"
+            android:padding="16dp"
+            android:background="@drawable/header_background">
+
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WELCOME TO SMART BUDGET"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvBudgetWarningMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="#F44336"
+            android:textSize="18sp"
+            android:fontFamily="monospace"
+            android:layout_marginTop="8dp" />
+
+
+        <!-- Add Transaction Button -->
+        <Button
+            android:id="@+id/btnAddTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Transaction"
+            app:backgroundTint="#007ACC"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- View Transactions Button -->
+        <Button
+            android:id="@+id/btnViewTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Transactions"
+            app:backgroundTint="#5DADE2"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- View Category Chart Button -->
+        <Button
+            android:id="@+id/btnChart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Category Chart"
+            app:backgroundTint="#4A90E2"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- Track Monthly Budget Button -->
+        <Button
+            android:id="@+id/btnBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Monthly Budget"
+            app:backgroundTint="#4285F4"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+
+        <!-- Set Daily Reminder Time Button -->
+        <Button
+            android:id="@+id/btnReminderSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Daily Reminder Time"
+            android:drawableStart="@drawable/ic_clock"
+            android:drawablePadding="8dp"
+            app:backgroundTint="#6F86D6"
+            android:textSize="22sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnExport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Export"
+            android:textSize="18sp"
+            android:backgroundTint="#4A90E2"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+
+        <Button
+            android:id="@+id/btnImport"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Import"
+            android:textSize="18sp"
+            android:backgroundTint="#283E75"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:layout_marginStart="8dp"
+            android:padding="12dp"
+            android:background="@drawable/rounded_button"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#80FFFFFF">
+    <item>
+        <layer-list>
+            <!-- Shadow -->
+            <item android:right="1dp" android:left="1dp" android:bottom="3dp">
+                <shape>
+                    <solid android:color="#66000000" />
+                    <corners android:radius="12dp"/>
+                </shape>
+            </item>
+            <!-- Button -->
+            <item android:bottom="3dp">
+                <shape>
+                    <solid android:color="@color/button_blue"/>
+                    <corners android:radius="12dp"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>
