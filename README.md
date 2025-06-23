@@ -20,7 +20,7 @@ A simple and intuitive Android application to help you track your personal finan
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/PersonalFinanceTrackerApp.git
+   git clone https://github.com/Ihsas01/PersonalFinanceTrackerApp.git
    ```
 2. **Open in Android Studio:**
    - Open Android Studio
