@@ -1,62 +1,38 @@
-# Personal Finance Tracker App
+Personal Finance Tracker App
+An intuitive Android app to track your personal finances and manage budgets.
 
-A simple and intuitive Android application to help you track your personal finances, manage budgets, and visualize your spending habits.
+Features
+Add, edit, and delete transactions
 
-## Features
+Categorize expenses and income
 
-- Add, edit, and delete transactions
-- Categorize expenses and income
-- Set and manage budgets
-- View spending charts by category
-- Set reminders for financial tasks
-- Persistent data storage
-- Modern, user-friendly interface
+View spending charts
 
-## Screenshots
+Persistent data storage
 
-<!-- Add screenshots of your app here -->
+Simple, user-friendly interface
 
-## Installation & Setup
+Installation
+bash
+Copy
+Edit
+git clone https://github.com/Ihsas01/PersonalFinanceTrackerApp.git
+Open in Android Studio
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/Ihsas01/PersonalFinanceTrackerApp.git
-   ```
-2. **Open in Android Studio:**
-   - Open Android Studio
-   - Select `Open an existing project` and choose this directory
-3. **Build the project:**
-   - Let Gradle sync and build the project
-4. **Run the app:**
-   - Connect your Android device or use an emulator
-   - Click the Run button in Android Studio
+Build & run on device or emulator
 
-## Usage
+Usage
+Add transactions
 
-- Launch the app to view your dashboard
-- Add new transactions by tapping the "+" button
-- Set budgets and reminders in their respective sections
-- View charts to analyze your spending patterns
+View charts to analyze spending
 
-## Project Structure
-
-```
+Project Structure
+bash
+Copy
+Edit
 app/
-  src/
-    main/
-      java/com/example/personalfinancetrackerapp/
-        model/                # Data models (e.g., Transaction)
-        utils/                # Utility classes (e.g., NotificationHelper)
-        Activities:           # MainActivity, BudgetActivity, etc.
-      res/                    # Resources (layouts, drawables, values)
-    test/                     # Unit tests
-    androidTest/              # Instrumented tests
-```
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 
+  src/main/java/com/example/personalfinancetrackerapp/
+    model/       # Data models
+    utils/       # Utility classes
+    Activities/  # Screens and activities
+  res/           # Layouts and resources
